@@ -11,10 +11,10 @@
 4. Buka Postman 
 
 
-<H1>Categories</H1>
+# Categories
 
-<H2>Create Kategori<H2>
-1. Pilih metode Post
+## Create Kategori
+1. Pilih metode POST
 
 2. Masukkan URL `http://localhost:3000/categories`
 
@@ -26,7 +26,7 @@
 <img src="image/kategori/createkategori.png" alt="Lihat Data Kategori" width="500">
 
 
-<H2>Read Kategori</H2>
+## Read Kategori
  1. Pilih metode GET
  
  2. Masukkan URL
@@ -35,7 +35,7 @@
  3. klik send, data akan di tampilkan
 <img src="image/kategori/getkategori.png" alt="Lihat Data Kategori" width="500">
 
-<H2>Update Kategori<H2>
+## Update Kategori
 1. Pilih metode PUT
 
 2. Masukkan URL `http://localhost:3000/categories/1`
@@ -48,7 +48,7 @@
 4. Klik send
 <img src="image/kategori/updatekategori.png" alt="Lihat Data Kategori" width="500">
 
-<H2>Delete Kategori<H2>
+## Delete Kategori
 1. Pilih metode DELETE
 
 2. Masukan URL `http://localhost:3000/categories/4`
@@ -65,20 +65,64 @@
 
 
 
-<H1>Products</H1>
+# Products
 
-<H2>Create Produk<H2>
+## Create Produk
+
+1. Pilih metode POST
+
+2. Masukkan URL `http://localhost:3000/products`
+
+3. Klik body, lalu pilih raw dan masukkan data JSON
+   `{
+   "name": "Scrub",
+   "price": 15000
+    }`
+4.  klik send
 
 <img src="image/produk/createproduk.png" alt="Lihat Data Kategori" width="500">
 
-<H2>Read Produk<H2>
+
+## Read Produk
+
+1. Pilih metode GET
+ 
+ 2. Masukkan URL
+   `http://localhost:3000/products`
+
+ 3. klik send, data akan di tampilkan
 
 <img src="image/produk/getproduk.png" alt="Lihat Data Kategori" width="500">
 
-<H2>Update Produk<H2>
+## Update Produk
+
+1. Pilih metode PUT
+
+2. Masukkan URL `http://localhost:3000/products/1`
+
+3. Klik body, lalu pilih raw dan masukkan data JSON
+   `{
+   "name" : "Sabun Mandi Cair",
+   "price": 15000
+   }`
+  
+4. Klik send
 
 <img src="image/produk/updateproduk.png" alt="Lihat Data Kategori" width="500">
 
-<H2>Delete Produk<H2>
+## Delete Produk
+
+1. Pilih metode DELETE
+
+2. Masukkan URL `http://localhost:3000/products/1`
+
+3. Klik body, lalu pilih raw dan masukkan data JSON
+   `{
+   "name" : "Sabun Mandi Cair",
+   "price": 15000
+   }`
+  
+4. Klik send
+
 
 <img src="image/produk/deleteproduk.png" alt="Lihat Data Kategori" width="500">
