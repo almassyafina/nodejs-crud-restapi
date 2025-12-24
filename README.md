@@ -13,33 +13,53 @@
 
 <H1>Categories</H1>
 
-<H3>Create Kategori<H3>
-  1. Pilih metode Post
+<H2>Create Kategori<H2>
+1. Pilih metode Post
 
-  2. Masukkan URL `http://localhost:3000/categories`
+2. Masukkan URL `http://localhost:3000/categories`
 
-  3. Klik body, lalu pilih raw dan masukkan data JSON
+3. Klik body, lalu pilih raw dan masukkan data JSON
      `{
      "name" : "Face Care"
      }`
+4.  klik send
 <img src="image/kategori/createkategori.png" alt="Lihat Data Kategori" width="500">
 
 
-<H3>Read Kategori</H3>
+<H2>Read Kategori</H2>
  1. Pilih metode GET
  
  2. Masukkan URL
    `http://localhost:3000/categories`
 
-3. klik send, data akan di tampilkan
+ 3. klik send, data akan di tampilkan
 <img src="image/kategori/getkategori.png" alt="Lihat Data Kategori" width="500">
 
-<H3>Update Kategori<H3>
+<H2>Update Kategori<H2>
+1. Pilih metode PUT
+
+2. Masukkan URL `http://localhost:3000/categories/1`
+
+3. Klik body, lalu pilih raw dan masukkan data JSON
+     `{
+     "name" : "Peralatan Mandi"
+     }`
   
+4. Klik send
 <img src="image/kategori/updatekategori.png" alt="Lihat Data Kategori" width="500">
 
-<H3>Delete Kategori<H3>
-  
+<H2>Delete Kategori<H2>
+1. Pilih metode DELETE
+
+2. Masukan URL `http://localhost:3000/categories/4`
+
+3. Klik body, lalu pilih raw dan masukkan data JSON
+    `{
+     "id": 4,
+     "name" : "Peralatan Mandi"
+     }`
+
+4. Klik send
 <img src="image/kategori/deletekategori.png" alt="Lihat Data Kategori" width="500">
 
 
@@ -47,18 +67,18 @@
 
 <H1>Products</H1>
 
-<H3>Create Produk<H3>
-  
+<H2>Create Produk<H2>
+
 <img src="image/produk/createproduk.png" alt="Lihat Data Kategori" width="500">
 
-<H3>Read Produk<H3>
+<H2>Read Produk<H2>
 
 <img src="image/produk/getproduk.png" alt="Lihat Data Kategori" width="500">
 
-<H3>Update Produk<H3>
+<H2>Update Produk<H2>
 
 <img src="image/produk/updateproduk.png" alt="Lihat Data Kategori" width="500">
 
-<H3>Delete Produk<H3>
+<H2>Delete Produk<H2>
 
 <img src="image/produk/deleteproduk.png" alt="Lihat Data Kategori" width="500">
