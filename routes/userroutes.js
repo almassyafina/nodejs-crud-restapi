@@ -1,12 +1,12 @@
-import express from 'express';
-import { deleteUser, getUsers, insertUser, showUsers, updateUser } from '../controllers/controldtuser.js';
-
+const express = require('express');
 const router = express.Router();
+const controldtuser = require('../controllers/controldtuser');
 
-router.get('/', getUsers);
-router.post('/', insertUser);
-router.get('/:id', showUsers);
-router.put('/:id', updateUser);
-router.delete('/:id', deleteUser);
+// Definisi Route Standar
+router.get('/', controldtuser.getAllUsers);
+router.get('/:id', controldtuser.getUserById);
+router.post('/', controldtuser.createUser);
+router.put('/:id', controldtuser.updateUser);
+router.delete('/:id', controldtuser.deleteUser);
 
-export default router;
+module.exports = router;

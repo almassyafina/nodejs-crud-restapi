@@ -1,27 +1,21 @@
-import mysql from "mysql2"
-import dotenv from "dotenv"
+const mysql = require('mysql2');
 
-dotenv.config();
-
-//perintah koneksi
+// Membuat koneksi database
 const db = mysql.createConnection({
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASS,
-    database: process.env.DB_NAME,
+    host: "localhost",
+    user: "root",
+    password: "",       
+    database: "genexmart"  
 });
 
-
-//JALANKAN KONEKSI DATABASE
+// Cek koneksi
 db.connect((err) => {
-    //jika eror
     if (err) {
-        console.error("Erorr koneksi Database", err);
-        return;
+        console.error("Database connection error:", err);
+    } else {
+        console.log("Database connected!");
     }
-
-    //jika berhasil
-    console.log ('MySQL Berhasil connect');
 });
 
-export default db;
+// Ekspor agar bisa digunakan di file lain
+module.exports = db;
